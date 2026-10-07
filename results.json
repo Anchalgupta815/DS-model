@@ -1,0 +1,95 @@
+{
+  "shape": [
+    569,
+    31
+  ],
+  "class_counts": {
+    "0": 357,
+    "1": 212
+  },
+  "missing_total": 0,
+  "duplicates": 0,
+  "outliers_top": {
+    "area error": 65,
+    "radius error": 38,
+    "perimeter error": 38,
+    "worst area": 35,
+    "smoothness error": 30,
+    "fractal dimension error": 28
+  },
+  "outlier_rows_any": 171,
+  "top_target_corr": {
+    "worst concave points": 0.794,
+    "worst perimeter": 0.783,
+    "mean concave points": 0.777,
+    "worst radius": 0.776,
+    "mean perimeter": 0.743,
+    "worst area": 0.734
+  },
+  "pairs_gt_095": 15,
+  "dropped_features": [
+    "mean perimeter",
+    "mean area",
+    "perimeter error",
+    "area error",
+    "worst radius",
+    "worst perimeter",
+    "worst area"
+  ],
+  "n_selected": 23,
+  "train_test": [
+    455,
+    114
+  ],
+  "tuned_SVM (RBF)": {
+    "params": {
+      "m__C": 100,
+      "m__gamma": 0.001
+    },
+    "cv_auc": 0.996
+  },
+  "tuned_Logistic Regression": {
+    "params": {
+      "m__C": 1
+    },
+    "cv_auc": 0.9958
+  },
+  "best_model": "SVM (RBF)",
+  "final": {
+    "accuracy": 0.9736842105263158,
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "f1": 0.9629629629629629,
+    "roc_auc": 0.9957010582010581
+  },
+  "confusion": [
+    [
+      72,
+      0
+    ],
+    [
+      3,
+      39
+    ]
+  ],
+  "report": "              precision    recall  f1-score   support\n\n      Benign       0.96      1.00      0.98        72\n   Malignant       1.00      0.93      0.96        42\n\n    accuracy                           0.97       114\n   macro avg       0.98      0.96      0.97       114\nweighted avg       0.97      0.97      0.97       114\n",
+  "reduced": {
+    "n": 23,
+    "accuracy": 0.9736842105263158,
+    "recall": 0.9285714285714286,
+    "f1": 0.9629629629629629,
+    "roc_auc": 0.9953703703703705
+  },
+  "top_importance": {
+    "worst perimeter": 0.143,
+    "worst area": 0.142,
+    "worst concave points": 0.113,
+    "mean concave points": 0.089,
+    "worst radius": 0.083,
+    "mean radius": 0.061,
+    "mean perimeter": 0.053,
+    "mean area": 0.044,
+    "mean concavity": 0.04,
+    "area error": 0.032
+  }
+}
